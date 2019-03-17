@@ -1,0 +1,58 @@
+/* Normal HTML */
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+/* Typography */
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #FFA620;
+
+  padding: 0 20px;
+  margin: 20px 0 10px;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: white;
+
+  padding: 0 20px;
+  margin: 10px 0 15px
+}
+
+/* Backgrounds and Colors */
+
+.background-light-grey {
+  background-color: #767676;
+}
+
+.background-dark-grey {
+  background-color: #2F2F2F;
+}
+
+/* Wrappers */
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+/* Banner */
+
+.banner h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  margin: 0;
+  padding: 5px 20px;
+  color: #FFA620;
+}
