@@ -2,7 +2,7 @@
 
 html, body {
   margin: 0;
-  height: 100%;
+  min-height: 100%;
 }
 
 /* Typography */
@@ -44,7 +44,11 @@ p {
 .content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  height: 100%;
+  min-height: 100%;
+}
+
+.timeline-wrapper {
+  padding: 20px;
 }
 
 /* Banner */
