@@ -1,0 +1,93 @@
+.navbar {
+  padding: 0;
+  margin: -5px 0 0 0;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+  padding: 15px 20px;
+}
+
+.navbar .dropdown {
+  float: left;
+  overflow: hidden;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #b34700;
+  z-index: 1;
+  min-width: 160px;
+  margin: 49px 0 0 0;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  display: block;
+  text-align: left;
+  padding: 12px 15px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Icon styling */
+.navbar a.icon {
+  float: right;
+  display: none;
+  padding: 5px 0;
+  font-size: 30px;
+}
+
+/* Mobile nav list styling */
+.mobile-nav-list {
+  display: none;
+}
+
+.mobile-nav-list a {
+  display: block;
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 15px;
+}
+
+.mobile-dropdown-content {
+  background-color: #b34700;
+  padding-left: 30px;
+  display: none;
+}
+
+/* Controls mobile nav list display on icon click */
+.mobile-nav-list.display {
+  display: block;
+}
+
+/* Controls when the navbar should switch from desktop view to mobile view */
+@media (max-width: 950px) {
+  .navbar a,
+  .navbar .dropdown {
+    display: none;
+  }
+  .navbar a.icon {
+    display: block;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar .content-wrapper {
+    padding: 0 15px;
+  }
+}

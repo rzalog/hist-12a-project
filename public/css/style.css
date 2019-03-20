@@ -29,6 +29,12 @@ p {
   margin: 10px 0 15px
 }
 
+a {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+}
+
 /* Backgrounds and Colors */
 
 .background-light-grey {
@@ -57,6 +63,6 @@ p {
   font-family: "Oswald", sans-serif;
   font-size: 48px;
   margin: 0;
-  padding: 5px 20px;
+  padding: 5px 20px 10px;
   color: #FFA620;
 }
