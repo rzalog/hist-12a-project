@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+	<title>About - History of Mass Incarceration</title>
+	<meta charset='utf-8' />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="/public/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="/hist-12a-project/public/favicon.png" />
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet" />
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="/public/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/hist-12a-project/public/css/style.css" />
+
+	<link rel="stylesheet" type="text/css" href="/public/css/navbar.css" />
+	<link rel="stylesheet" type="text/css" href="/hist-12a-project/public/css/navbar.css" />
+
+	<link rel="stylesheet" type="text/css" href="/public/css/plantation-to-prison.css" />
+	<link rel="stylesheet" type="text/css" href="/hist-12a-project/public/css/plantation-to-prison.css" />
+</head>
+<body class='background-light-grey'>
+	<div class='content-wrapper main-content-wrapper background-dark-grey'>
+
+		<!-- Banner -->
+		<div class="banner">
+			<a href='/hist-12a-project'><h1>History of Mass Incarceration</h1></a>
+		</div>
+
+		<!-- Navbar -->
+		<div class='navbar'>
+			<div class='content-wrapper'>
+				<a href='/hist-12a-project'>Timeline</a>
+				<a href='/hist-12a-project/views/common-themes.html'>Common Themes</a>
+				<a href='/hist-12a-project/views/plantation-to-prison.html'>Plantation to Prison</a>
+				<a href='/hist-12a-project/views/current-state.html'>Current State</a>
+				<a href='/hist-12a-project/views/about.html'>About</a>
+				<a class='icon' onclick='displayMobileNavList()'>&#9776;</a>
+			</div>
+		</div>
+		<div id="mobile-nav-list" class='mobile-nav-list'>
+			<a href='/hist-12a-project'>Timeline</a>
+			<a href='/hist-12a-project/views/common-themes.html'>Common Themes</a>
+			<a href='/hist-12a-project/views/plantation-to-prison.html'>Plantation to Prison</a>
+			<a href='/hist-12a-project/views/current-state.html'>Current State</a>
+			<a href='/hist-12a-project/views/about.html'>About</a>
+		</div>
+
+		<h1>The Plantation to Prison Theory</h1>
+		<p>
+			The Plantation to Prison Theory states that when you compare the current state of
+			mass incarceration with that of the slavery and Jim Crow era, a direct line between
+			them can be drawn. In other words, the Plantation to Prison Theory serves to state that,
+			to a certain extent, slavery still exists in the modern era, it has just appeared in
+			a different form.
+		</p>
+
+		<p>
+			How does one draw a line between the slavery and Jim Crow era to today? Wasn't slavery
+			abolished at the end of the American Civil War with the 13th, 14th, and 15th Amendments?
+			Well when the two periods are placed side by side, a couple very defining similarities can
+			be seen between them. By analyzing these similarities and differences, one can see that the
+			conditions a person of color enduring during the slavery or Jim Crow era are not too different
+			from the conditions of the modern criminal justice system. Below is a chart that attempts
+			to highlight some of these similarities.
+		</p>
+
+		<p>
+			However, the Plantation to Prison theory isn't without flaws. There are several counter
+			arguments and criticisms of this theory that attempt to disprove the theory.
+		</p>
+
+		<div class='comparison-container'>
+			<div class='comparison-column'>
+				<h2>Slavery and the Jim Crow Era</h2>
+
+				<p>
+				Slaves were a cheap source of labor for slave owners, and were critical
+				within the US Southern economy before the Civil War.
+			</p>
+
+				<p>
+				Slaves were not allowed to vote during slavery (except for the 3/5th Compromise)
+				and were further deterred from voting through mechanisms such as poll taxes and
+				literacy tests.
+			</p>
+
+				<p>
+				Black people didn't hold any power within the court and were charged severely
+				for crimes committed against a white person.
+			</p>
+
+				<p>
+				Despite being "separate but equal", black people were portrayed as being less
+				fortunate and less deserving than the white population.
+			</p>
+
+			</div>
+
+			<div class='comparison-column'>
+				<h2>Modern US Criminal Justice System</h2>
+
+				<p>Incarcerated inmates are forced to produce goods for no compensation.</p>
+
+				<p>Incarcerated individuals are not allowed to vote (in some states).</p>
+
+				<p>Policing (and predictive policing) and heavily skewed to incarcerating people of color.</p>
+
+				<p>Incarceration or even deportation used as a form of punishment to crime.</p>
+
+				<p>
+					Acts such as anti-homelessness, anti-vagrancy, and the War on Drugs have portrayed
+					black populations as more likely to commit crimes and deal drugs.
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Necessary JS to make mobile navbar work -->
+	<script>
+		// Function that displays the mobile nav list by adding the display className
+		function displayMobileNavList() {
+			let x = document.getElementById('mobile-nav-list')
+			if (x.className === 'mobile-nav-list') {
+				x.className += ' display'
+			} else {
+				x.className = 'mobile-nav-list'
+			}
+		}
+
+		// Function that finds the corresponding dropdown contentand toggles its display
+		function displayDropdownContent(e) {
+			$(e).find('.mobile-dropdown-content').toggle()
+		}
+
+	</script>
+</body>
+</html>

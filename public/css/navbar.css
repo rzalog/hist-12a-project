@@ -76,7 +76,7 @@
 }
 
 /* Controls when the navbar should switch from desktop view to mobile view */
-@media (max-width: 950px) {
+@media (max-width: 850px) {
   .navbar a,
   .navbar .dropdown {
     display: none;

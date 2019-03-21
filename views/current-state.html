@@ -16,9 +16,11 @@
 	<link rel="stylesheet" type="text/css" href="/public/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="/hist-12a-project/public/css/style.css" />
 
+	<link rel="stylesheet" type="text/css" href="/public/css/navbar.css" />
+	<link rel="stylesheet" type="text/css" href="/hist-12a-project/public/css/navbar.css" />
 </head>
 <body class='background-light-grey'>
-	<div class='content-wrapper background-dark-grey'>
+	<div class='content-wrapper main-content-wrapper background-dark-grey'>
 
 		<!-- Banner -->
 		<div class="banner">
@@ -26,6 +28,23 @@
 		</div>
 
 		<!-- Navbar -->
+		<div class='navbar'>
+			<div class='content-wrapper'>
+				<a href='/hist-12a-project'>Timeline</a>
+				<a href='/hist-12a-project/views/common-themes.html'>Common Themes</a>
+				<a href='/hist-12a-project/views/plantation-to-prison.html'>Plantation to Prison</a>
+				<a href='/hist-12a-project/views/current-state.html'>Current State</a>
+				<a href='/hist-12a-project/views/about.html'>About</a>
+				<a class='icon' onclick='displayMobileNavList()'>&#9776;</a>
+			</div>
+		</div>
+		<div id="mobile-nav-list" class='mobile-nav-list'>
+			<a href='/hist-12a-project'>Timeline</a>
+			<a href='/hist-12a-project/views/common-themes.html'>Common Themes</a>
+			<a href='/hist-12a-project/views/plantation-to-prison.html'>Plantation to Prison</a>
+			<a href='/hist-12a-project/views/current-state.html'>Current State</a>
+			<a href='/hist-12a-project/views/about.html'>About</a>
+		</div>
 
 		<h1>Current State of Mass Incarceration</h1>
 		<p>
@@ -40,23 +59,42 @@
 			facts, but also a collection of unique thoughts and commentaries on the subject of
 			mass incarceration.
 		</p>
-        <h2>Big Data and Policing</h2>
-        <p>
+		<h2>Big Data and Policing</h2>
+		<p>
             Technology has brought access to huge amounts of data. Today, many police reports that should be public property are withheld without reason. There has been a public push to have body cameras on all police officers during their activity, however, this solution has not brought about much change. Much of the feed from these cameras is again not shared by the police, and officers have control over when to turn on these cameras.
         </p>
-        <h2>Decarceration</h2>
+		<h2>Decarceration</h2>
 		<p>
             Overcrowding of prisons is already a major problem in today’s incarceral state. Decarceration involves a push to stop putting people in prison for minor crimes such as drug possessions and misdemeanors and getting current inmates out of prison. Inmates who are in for minor crimes are disproportionately Black and Latino. Incarcerating people for these crimes results in overcrowded prisons. This spirals into building more prisons.
         </p>
-        <h2>Rehabilitation</h2>
-        <p>
+		<h2>Rehabilitation</h2>
+		<p>
             Rehabilitation often is paired with decareration. It involves assisting current inmates, who may have spent a very long time in prison, to come back to life outside of prison. Often, employers will not employ past inmates and people who have been convicted of crime. These previous inmates are forced to return to a life of petty crime to survive, finding themselves back in prison in a deathly spiral.
         </p>
-        <h2>Public Policy</h2>
-        <p>
+		<h2>Public Policy</h2>
+		<p>
             Mass incarceration is a problem in the US. Not only does it cost the country and states a large sum of money to maintain prisons, it also comes at an emotional cost to the people and families who have people they care about locked up. Today, people have recognized mass incarceration as a problem and are taking steps to reduce and eliminate the problem. One of the ways people are contributing to the solution is fighting for change in public policy. Public policy can be influenced with power, such as the power on social media, political power, philanthropists, and people power. By taking advantage of these several sources of power, people have been able to achieve political victories over policy related to mass incarceration.
         </p>
-        
+
 	</div>
+
+	<!-- Necessary JS to make mobile navbar work -->
+	<script>
+		// Function that displays the mobile nav list by adding the display className
+		function displayMobileNavList() {
+			let x = document.getElementById('mobile-nav-list')
+			if (x.className === 'mobile-nav-list') {
+				x.className += ' display'
+			} else {
+				x.className = 'mobile-nav-list'
+			}
+		}
+
+		// Function that finds the corresponding dropdown contentand toggles its display
+		function displayDropdownContent(e) {
+			$(e).find('.mobile-dropdown-content').toggle()
+		}
+
+	</script>
 </body>
 </html>
