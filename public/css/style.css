@@ -46,6 +46,20 @@ a {
   letter-spacing: 2px;
 }
 
+@media (max-width: 450px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
 /* Backgrounds and Colors */
 
 .background-light-grey {
@@ -80,4 +94,10 @@ a {
   margin: 0;
   padding: 5px 20px 10px;
   color: #FFA620;
+}
+
+@media (max-width: 400px) {
+  .banner h1 {
+    font-size: 36px;
+  }
 }
